@@ -23,8 +23,7 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'uiGm
     $scope.locations = globals.locations;
 
     $scope.location = _.findWhere($scope.locations, where);
-
-    var address;
+    /*
     var passVal = $scope.location;
     uiGmapGoogleMapApi.then(function(maps) {
         var geocoder = new google.maps.Geocoder;
@@ -35,6 +34,8 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'uiGm
             $scope.$apply();
         });
     });
+    */
+    $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
 }])
 
 
