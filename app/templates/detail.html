@@ -4,9 +4,9 @@
     <div class="detailImage">
       <img ng-src="images/{{location.name}}-little.jpg" />
     </div>
+    <h3>Amenities: </h3>
     <div class="detail">
-      <h3>Amenities: </h3>
-      <div class="detailAmenities col-sm-12 col-md-8">
+      <div class="detailAmenities col-sm-12 col-md-6">
         <p ng-repeat="(key,value) in location.hours">{{key}}: {{value}}</p>
 
         <p>Driving tip: {{location.driving_tip}}</p>
