@@ -1,6 +1,6 @@
 html,body{
     font-family: 'tt_firsregular';
-    background-color: #FFA754;
+    background-color: white;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -31,7 +31,7 @@ td{
     background-color: white;
     padding: 1em;
     border-radius: 7px;
-    box-shadow: 3px 3px 9px #FF6900;
+    box-shadow: 3px 3px 9px #FFA754;
 }
 
 .zipFinder{
