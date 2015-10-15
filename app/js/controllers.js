@@ -25,11 +25,12 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'glob
     $scope.location = _.findWhere($scope.locations, where);
 
     //set map in place
+    /*
     var map = new google.maps.Map(document.getElementById('detailMap'), {
         center: {lat: -34.397, lng: 150.644},
         zoom: 8
     });
-
+    */
 }])
 
 sApp.controller('ContactController', ['$scope', '$state', function($scope, $state) {}])
