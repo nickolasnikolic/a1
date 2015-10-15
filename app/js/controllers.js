@@ -31,8 +31,7 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'uiGm
         geocoder.geocode({address: $scope.location.address1}, function(result){
             console.log(result);
             //set map in place
-            $scope.map = { center: { address: $scope.location.address1 }, zoom: 8 };
-
+            $scope.map = { center: { lat: result[0].geometry.lat,  lng: result[0].geometry.lng}, zoom: 8 };
         });
     });
 }])
