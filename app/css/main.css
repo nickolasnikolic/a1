@@ -37,10 +37,6 @@ td{
 .little-down-below{
     margin-top: 1em;
 }
-footer{
-    font-family: 'tt_firslight';
-    height: 4em;
-}
 
 a{
     cursor: pointer;
@@ -61,6 +57,8 @@ header{
 }
 
 footer{
+    font-family: 'tt_firslight';
+    height: 4em;
     position: absolute;
     left: 0px;
     bottom: 0px;
