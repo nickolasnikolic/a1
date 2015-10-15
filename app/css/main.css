@@ -31,6 +31,7 @@ td{
     background-color: white;
     padding: 1em;
     border-radius: 7px;
+    box-shadow: 3px 3px 9px #FF6900;
 }
 
 .zipFinder{
@@ -123,9 +124,6 @@ a, a:link, a:visited, a:active{
 
 header{
     padding: 0;
-    background-color: #FF6900;
-    height: 4em;
-    margin-bottom: 0.7em;
 }
 
 footer{
