@@ -50,6 +50,10 @@ a{
     height: 100%;
 }
 
+.detailTitle{
+    margin-top: 0px;
+}
+
 header{
     background-color: #FF6900;
     height: 7em;
