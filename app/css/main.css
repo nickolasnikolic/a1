@@ -62,8 +62,8 @@ header{
 
 footer{
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 0px;
+    bottom: 0px;
     background-color: #B25A1D;
     margin-top: 3em;
 }
