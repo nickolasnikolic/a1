@@ -27,6 +27,10 @@ td{
     padding: 1em;
 }
 
+.ui{
+    background-color: white;
+}
+
 .zipFinder{
     min-height: 10em;
     width: auto;
