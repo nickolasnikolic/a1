@@ -38,9 +38,22 @@ td{
     margin: auto;
 }
 
+.zipFinder form{
+    margin-left: -1em;
+}
+
+.zipFinder input[type='text']{
+    width: 22em;
+}
+
 .distanceTable table{
     background-color: white;
     border: 1px solid black;
+}
+
+.distanceTable th{
+    border: none;
+    font-family: 'tt_firsextrabold';
 }
 
 .distanceTable td{
