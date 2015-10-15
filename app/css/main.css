@@ -1,9 +1,21 @@
 html,body{
-    font-family: 'pacienciaregular';
+    font-family: 'tt_firsregular';
 }
 
-h1,h2,h3,h4,h5,h6,.san-serif{
-    font-family: 'sofia_prolight';
+h1,h2,h3,h4,h5,h6{
+    font-family: 'tt_firsbold';
+}
+
+em{
+   font-family: 'tt_firsitalic';
+}
+
+strong{
+    font-family: 'tt_firsextrabold';
+}
+
+strong em{
+    font-family: 'tt_firsextrabold_italic';
 }
 
 .description{
@@ -21,7 +33,7 @@ h1,h2,h3,h4,h5,h6,.san-serif{
     margin-top: 1em;
 }
 footer{
-    margin-top: 5em;
+    font-family: 'tt_firslight';
 }
 
 a{

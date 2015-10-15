@@ -1,15 +1,15 @@
-<section>
+<section class="zipFinder">
   <form>
     <input type="text" name="zip" id="zip"/>
     <button id="zipButton">submit</button>
   </form>
 </section>
-<section>
+<section class="distanceTable">
   <table>
     <thead>
       <th>Location</th>
       <th>phone</th>
-      <th>distance</th>
+      <th>distance (enter zip to fill)</th>
     </thead>
     <tr ng-repeat="loc in locations">
       <td class="locationTitle">{{loc.name}}</td> -
