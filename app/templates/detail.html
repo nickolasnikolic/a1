@@ -4,7 +4,7 @@
   </div>
   <div class="detailText">
     <div class="detailContact">
-      <p><strong>Location: </strong>{{location.name}}</p>
+      <h2><strong>Location: </strong>{{location.name}}</h2>
       <p><strong>Phone: </strong>{{location.phone}}</p>
       <p>email: {{location.email}}</p>
       <p>FAX: {{location.fax}}</p>
@@ -13,7 +13,7 @@
       <p>{{location.city}}, {{location.state}} {{location.zip}}</p>
     </div>
     <div class="detailAmenities">
-      <p ng-repeat="day in location.hours">{{day}}</p>
+      <p ng-repeat="key,value in location.hours">{{key}}: {{value}}</p>
 
       <p>Driving tip: {{location.driving_tip}}</p>
       <p>{{location.sizes.join(' ')}}</p>

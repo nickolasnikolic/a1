@@ -1,5 +1,6 @@
 html,body{
     font-family: 'tt_firsregular';
+    background-color: #D9F5FF;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -46,4 +47,12 @@ a{
 
 .social-share > div{
     margin-bottom: 1em;
+}
+
+header{
+    background-color: #FF6900;
+}
+
+footer{
+    background-color: #B25A1D;
 }
