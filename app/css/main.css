@@ -122,6 +122,12 @@ a, a:link, a:visited, a:active{
     margin-top: -1em;
 }
 
+.movingGraphic{
+    height: 300px;
+    width: 200px;
+    background-image: url(../images/movers.jpeg);
+}
+
 header{
     padding: 0;
 }
@@ -138,5 +144,8 @@ footer{
     }
     .ui{
         box-shadow: none;
+    }
+    .movingGraphic{
+        display: none;
     }
 }
