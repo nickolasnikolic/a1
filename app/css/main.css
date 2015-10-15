@@ -30,6 +30,9 @@ td{
 .ui{
     background-color: white;
     background-image: url(../images/movers.jpeg);
+    background-repeat: no-repeat;
+    background-position-x: 507px;
+    background-position-y: -138px;
     padding: 1em;
     border-radius: 7px;
     box-shadow: 3px 3px 9px #FFA754;
