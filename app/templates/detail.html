@@ -6,13 +6,13 @@
     </div>
     <div class="detail">
       <h3>Amenities: </h3>
-      <div class="detailAmenities">
+      <div class="detailAmenities col-sm-12 col-md-8">
         <p ng-repeat="(key,value) in location.hours">{{key}}: {{value}}</p>
 
         <p>Driving tip: {{location.driving_tip}}</p>
         <p>{{location.sizes.join(' ')}}</p>
       </div>
-      <div id="detailMap">
+      <div id="detailMap" class="col-sm-12 col-md-4">
         <map center="-34.397, 150.644" zoom="8"></map>
       </div>
     </div>

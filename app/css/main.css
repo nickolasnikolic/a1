@@ -65,6 +65,7 @@ a, a:link, a:visited, a:active{
 }
 
 #detailMap{
+    float: right;
     background-color: #EAFBFF;
     height: 23em;
     width: 23em;
