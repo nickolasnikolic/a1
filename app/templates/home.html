@@ -1,0 +1,20 @@
+<section>
+  <form>
+    <input type="text" name="zip" id="zip"/>
+    <button id="zipButton">submit</button>
+  </form>
+</section>
+<section>
+  <table>
+    <thead>
+      <th>Location</th>
+      <th>phone</th>
+      <th>distance</th>
+    </thead>
+    <tr ng-repeat="loc in locations">
+      <td class="locationTitle">{{loc.name}}</td> -
+      <td class="locationPhone">{{loc.phone}}</td>
+      <td class="locationDistance">{{loc.distance}}</td>
+    </tr>
+  </table>
+</section>
