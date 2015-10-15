@@ -55,6 +55,7 @@ a{
 }
 
 #detailMap{
+    background-color: #EAFBFF;
     height: 23em;
     width: 23em;
 }
@@ -67,7 +68,7 @@ header{
 
 footer{
     font-family: 'tt_firslight';
-    height: 4em;
+    height: 7em;
     position: absolute;
     left: 0px;
     bottom: 0px;
