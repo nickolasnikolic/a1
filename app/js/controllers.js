@@ -8,6 +8,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
         var zip = $('#zip').val();
         if(zip.length > 4){
             //pull distance matrix from google maps
+            alert('running');
         }
     };
 
