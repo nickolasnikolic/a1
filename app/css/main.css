@@ -38,11 +38,8 @@ td{
     margin-top: 1em;
 }
 
-a{
+a, a:link, a:visited, a:active{
     cursor: pointer;
-}
-
-h1 a{
     text-decoration: none;
     color: black;
 }
