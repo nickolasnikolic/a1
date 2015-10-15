@@ -2,9 +2,20 @@ sApp.controller('IndexController', ['$scope', '$state', 'globals', function($sco
 
 sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scope, $state, globals) {
 
+    $scope.locations = globals.locations;
+
 }])
 
 sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'globals', function($scope, $state, $stateParams, globals) {
+
+    var where = {};
+
+    where.name = $stateParams.location;
+
+    var locations = globals.locations;
+
+    $scope.location = _.where(locations, where);
+
 
 }])
 
