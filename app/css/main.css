@@ -54,6 +54,11 @@ a{
     margin-top: 0px;
 }
 
+#detailMap{
+    height: 13em;
+    width: 13em;
+}
+
 header{
     background-color: #FF6900;
     height: 7em;
