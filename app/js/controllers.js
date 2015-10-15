@@ -4,7 +4,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
 
     $scope.locations = globals.locations;
 
-    $scope.getDistance = function(){
+    $scope.getDistances = function(){
         var zip = $('#zip').val();
         if(zip.length > 4){
             var map;
@@ -16,8 +16,6 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                 callback: function (results, status) {
                     if (status == 'OK') {
                         latlng1 = results[0].geometry.location;
-
-                        var locations = $scope.locations;
 
                         _.each( $scope.locations, function( element, index, list ){
 
