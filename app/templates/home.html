@@ -10,11 +10,13 @@
       <th>Location</th>
       <th>phone</th>
       <th>distance</th>
+      <th>travel time</th>
     </thead>
     <tr ng-repeat="loc in locations">
       <td class="locationTitle">{{loc.name}}</td>
       <td class="locationPhone">{{loc.phone}}</td>
-      <td class="locationDistance">{{loc.distance}}</td>
+      <td class="locationDistance">{{loc.distanceToTravel}}</td>
+      <td class="locationTimeAway">{{loc.timeToTravel}}</td>
     </tr>
   </table>
 </section>
