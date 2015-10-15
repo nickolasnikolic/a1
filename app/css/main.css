@@ -32,14 +32,8 @@ td{
 }
 
 .zipFinder{
-    min-height: 10em;
     width: auto;
     margin: auto;
-}
-
-.zipFinder form{
-    width: 15em;
-    margin: 7em auto;
 }
 
 .distanceTable table{
@@ -48,7 +42,7 @@ td{
 }
 
 .distanceTable td{
-    border: 1px solid gainsboro;
+    border: 1px solid white;
 }
 
 .little-up-top{
