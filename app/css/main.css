@@ -1,6 +1,7 @@
 html,body{
     font-family: 'tt_firsregular';
     background-color: white;
+    background-image: url(../images/cubes/cubes_hi.png);
 }
 
 h1,h2,h3,h4,h5,h6{
