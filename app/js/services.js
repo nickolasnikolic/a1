@@ -4,7 +4,7 @@ sApp.factory('globals', function() {
 
     Service.locations = [
         {
-            name: 'Waukesha, WI',
+            name: 'Waukesha',
             phone: '1-262-547-8989',
             email: 'Alloneselfstorage@gmail.com',
             fax: '1-262-970-8989',
@@ -34,7 +34,7 @@ sApp.factory('globals', function() {
                 '10x40', '20x20', '20x25', '20x30'
             ]
         },        {
-            name: 'Pewaukee, WI',
+            name: 'Pewaukee',
             phone: '1-262-547-8989',
             email: 'Alloneselfstorage@gmail.com',
             fax: '1-262-970-8989',
@@ -63,7 +63,7 @@ sApp.factory('globals', function() {
                 '20x20'
             ]
         },        {
-            name: 'Pewaukee, WI',
+            name: 'Pewaukee',
             phone: '1-262-547-8989',
             email: 'Alloneselfstorage@gmail.com',
             fax: '1-262-970-8989',
@@ -93,7 +93,7 @@ sApp.factory('globals', function() {
                 '10x40', '20x20', '20x25', '20x30'
             ]
         },{
-            name: 'Muskego, WI',
+            name: 'Muskego',
             phone: '1-262-547-8989',
             email: 'Alloneselfstorage@gmail.com',
             fax: '1-262-970-8989',
