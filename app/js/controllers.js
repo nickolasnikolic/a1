@@ -53,7 +53,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                                                 }
                                                 console.log(time + " " + distance);
                                                 element.timeToTravel = time/60;
-                                                element.distanceToTravel = distance/3000;
+                                                element.distanceToTravel = distance/2570;
                                                 $scope.$apply(); //kick it to the ui
                                             }
                                         });
