@@ -60,6 +60,10 @@ a, a:link, a:visited, a:active{
     margin-top: 0px;
 }
 
+.detailImage img{
+    width: 100%;
+}
+
 #detailMap{
     background-color: #EAFBFF;
     height: 23em;
