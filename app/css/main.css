@@ -29,6 +29,8 @@ td{
 
 .ui{
     background-color: white;
+    padding: 1em;
+    margin: 0;
 }
 
 .zipFinder{
