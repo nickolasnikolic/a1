@@ -15,8 +15,8 @@
     <tr ng-repeat="loc in locations">
       <td class="locationTitle">{{loc.name}}</td>
       <td class="locationPhone">{{loc.phone}}</td>
-      <td class="locationDistance">{{loc.distanceToTravel}}</td>
-      <td class="locationTimeAway">{{loc.timeToTravel}}</td>
+      <td class="locationDistance">{{loc.distanceToTrave | number: 2}}</td>
+      <td class="locationTimeAway">{{loc.timeToTravel | number: 2}}</td>
     </tr>
   </table>
 </section>

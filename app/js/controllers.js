@@ -52,8 +52,8 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                                                     distance += e[0].legs[i].distance.value;
                                                 }
                                                 console.log(time + " " + distance);
-                                                element.timeToTravel = time/60 + 'minutes';
-                                                element.distanceToTravel = distance/5280 + 'miles';
+                                                element.timeToTravel = time/60 + ' minutes';
+                                                element.distanceToTravel = distance/5280 + ' miles';
                                                 $scope.$apply(); //kick it to the ui
                                             }
                                         });
