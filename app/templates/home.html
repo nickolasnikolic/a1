@@ -1,10 +1,17 @@
-<section class="zipFinder container">
-  <form>
-    <input type="text" placeholder="zip code" name="zip" id="zip"/>
-    <button id="zipButton" ng-click="getDistances()">submit</button>
-  </form>
+<section class="marketing">
+  <article><p>Visa & MasterCard Accepted</p></article>
+  <article><p>Locally Owned and Operated</p></article>
+  <article><p>Let us help you with your storage needs!</p></article>
+  <article><p>Clean - Gated - Low Prices</p></article>
+  <article><p>Click on a location below that will best suit your needs</p></article>
 </section>
 <section class="distanceTable little-up-top container">
+  <div class="zipFinder container">
+    <form>
+      <input type="text" placeholder="zip code" name="zip" id="zip"/>
+      <button id="zipButton" ng-click="getDistances()">submit</button>
+    </form>
+  </div>
   <table>
     <thead>
       <th>Location</th>
@@ -12,7 +19,7 @@
       <th>distance</th>
       <th>travel time</th>
     </thead>
-    <tr ng-repeat="loc in locations | orderBy: -loc.distanceToTravel">
+    <tr ng-repeat="loc in locations | orderBy: -distanceToTravel">
       <td class="locationTitle">{{loc.name}}</td>
       <td class="locationPhone">{{loc.phone}}</td>
       <td class="locationDistance">{{loc.distanceToTravel | number: 2}} miles</td>
