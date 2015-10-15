@@ -32,10 +32,10 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'uiGm
             console.log(result);
             //set map in place
             $scope.map = { center: { address: $scope.location.address1 }, zoom: 8 };
-        }])
+
         });
     });
-
+}])
 
 
 sApp.controller('ContactController', ['$scope', '$state', function($scope, $state) {}])
