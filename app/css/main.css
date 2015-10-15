@@ -46,11 +46,6 @@ td{
     width: 22em;
 }
 
-.distanceTable table{
-    background-color: white;
-    border: 1px solid black;
-}
-
 .distanceTable th{
     border: none;
     font-family: 'tt_firsextrabold';
