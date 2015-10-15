@@ -14,7 +14,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
 
 }])
 
-sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'globals', function($scope, $state, $stateParams, globals) {
+sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'uiGmapGoogleMapApi', 'globals', function($scope, $state, $stateParams, uiGmapGoogleMapApi, globals) {
 
     var where = {};
 
@@ -24,8 +24,18 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'glob
 
     $scope.location = _.findWhere($scope.locations, where);
 
-    //set map in place
-    $scope.map = { center: { address: $scope.location.address1 }, zoom: 8 };
-}])
+
+    var address;
+    uiGmapGoogleMapApi.then(function(maps) {
+        var geocoder = new google.maps.Geocoder;
+        geocoder.geocode({address: $scope.location.address1}, function(result){
+            console.log(result);
+            //set map in place
+            $scope.map = { center: { address: $scope.location.address1 }, zoom: 8 };
+        }])
+        });
+    });
+
+
 
 sApp.controller('ContactController', ['$scope', '$state', function($scope, $state) {}])
