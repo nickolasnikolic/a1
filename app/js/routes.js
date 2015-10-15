@@ -1,4 +1,4 @@
-var sApp = angular.module('sApp', ['ui.router', 'ngSanitize', 'angular.filter', 'uiGmapgoogle-maps'])
+var sApp = angular.module('sApp', ['ui.router', 'ngSanitize', 'angular.filter', 'ngMap'])
   .config(['$stateProvider',
     function($stateProvider) {
       $stateProvider
