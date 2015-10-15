@@ -38,6 +38,15 @@ td{
     margin: 7em auto;
 }
 
+.distanceTable table{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.distanceTable td{
+    border: 1px solid gainsboro;
+}
+
 .little-up-top{
     margin-top: 1em;
 }
