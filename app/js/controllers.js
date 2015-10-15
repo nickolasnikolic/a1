@@ -16,7 +16,6 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'glob
 
     $scope.location = _.findWhere(locations, where);
 
-
 }])
 
 sApp.controller('ContactController', ['$scope', '$state', function($scope, $state) {}])
