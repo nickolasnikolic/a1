@@ -1,4 +1,22 @@
 <section class="container">
-  <div class="detailText"></div>
-  <div class="detailImage"></div>
+  <div class="detailText">        {
+    <p>{{location.name}}</p>
+    <p>{{location.phone}}</p>
+    <p>{{location.email}}</p>
+    <p>{{location.fax}}</p>
+    <p>{{location.after_hours_phone}}</p>
+    <p>{{location.address1}}</p>
+    <p>{{location.address2}}</p>
+    <p>{{location.city}}</p>
+    <p>{{location.state}}</p>
+    <p>{{location.zip}}</p>
+
+    <p>{{location.hours}}</p>
+
+    <p>{{location.driving_tip}}</p>
+    <p>{{location.sizes}}</p>
+     </div>
+  <div class="detailImage">
+    <img ng-src="images/{{location.name}}-little.jpg" />
+  </div>
 </section>
