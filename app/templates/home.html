@@ -20,7 +20,11 @@
       <th>travel time</th>
     </thead>
     <tr ng-repeat="loc in locations | orderBy: -distanceToTravel">
-      <td class="locationTitle">{{loc.name}}</td>
+      <td class="locationTitle">
+        <a ui-sref="location({location:loc.name })">
+          <span>{{loc.name}} </span>
+        </a>
+      </td>
       <td class="locationPhone">{{loc.phone}}</td>
       <td class="locationDistance">{{loc.distanceToTravel | number: 2}} miles</td>
       <td class="locationTimeAway">{{loc.timeToTravel | number: 2}} minutes</td>
