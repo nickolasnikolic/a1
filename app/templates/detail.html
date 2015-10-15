@@ -3,17 +3,19 @@
     <img ng-src="images/{{location.name}}-little.jpg" />
   </div>
   <div class="detailText">
-    <p><strong>Location:</strong>{{location.name}}</p>
-    <p><strong>Phone:</strong>{{location.phone}}</p>
-    <p>email: {{location.email}}</p>
-    <p>FAX: {{location.fax}}</p>
-    <p>After-Hours Phone: {{location.after_hours_phone}}</p>
-    <p>Address: {{location.address1}} {{location.address2}}</p>
-    <p>{{location.city}}, {{location.state}} {{location.zip}}</p>
+    <div class="detailContact">
+      <p><strong>Location: </strong>{{location.name}}</p>
+      <p><strong>Phone: </strong>{{location.phone}}</p>
+      <p>email: {{location.email}}</p>
+      <p>FAX: {{location.fax}}</p>
+      <p>After-Hours Phone: {{location.after_hours_phone}}</p>
+      <p>Address: {{location.address1}} {{location.address2}}</p>
+      <p>{{location.city}}, {{location.state}} {{location.zip}}</p>
+    </div>
 
-    <p>{{location.hours}}</p>
+    <p ng-repeat="day in location.hours">{{day}}</p>
 
-    <p>{{location.driving_tip}}</p>
-    <p>{{location.sizes}}</p>
+    <p>Driving tip: {{location.driving_tip}}</p>
+    <p>{{location.sizes.join(' ')}}</p>
      </div>
 </section>
