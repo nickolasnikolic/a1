@@ -30,7 +30,7 @@
     <ul>
       <h3>Other locations: </h3>
       <li ng-repeat="loc in locations">
-        <a ui-sref="location({location:{{loc.name}} })">
+        <a ui-sref="location({location:loc.name })">
           <span class="locationTitle">{{loc.name}} </span>
           <span class="locationPhone">{{loc.phone}} </span>
           <span class="locationDistance">{{loc.distance}} </span>
