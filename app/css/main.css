@@ -27,14 +27,12 @@ td{
     padding: 1em;
 }
 
-.description{
+.zipFinder{
     min-height: 10em;
+    width: auto;
+    margin: auto;
 }
 
-.list{
-    border: 1px thin black;
-    border-radius: 3%;
-}
 .little-up-top{
     margin-top: 1em;
 }
