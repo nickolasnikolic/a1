@@ -29,6 +29,7 @@ td{
 
 .ui{
     background-color: white;
+    background-image: url(../images/movers.jpeg);
     padding: 1em;
     border-radius: 7px;
     box-shadow: 3px 3px 9px #FFA754;
@@ -121,14 +122,13 @@ a, a:link, a:visited, a:active{
 .lift-1{
     margin-top: -1em;
 }
-
+/*
 .movingGraphic{
     height: 300px;
     width: 200px;
     background-image: url(../images/movers.jpeg);
-    float: right;
 }
-
+*/
 header{
     padding: 0;
 }
