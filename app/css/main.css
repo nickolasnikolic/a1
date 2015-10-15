@@ -123,10 +123,6 @@ header{
 footer{
     font-family: 'tt_firslight';
     padding: 1em;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    background-color: #B25A1D;
     margin-top: 3em;
 }
 
