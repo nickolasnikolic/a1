@@ -126,6 +126,7 @@ a, a:link, a:visited, a:active{
     height: 300px;
     width: 200px;
     background-image: url(../images/movers.jpeg);
+    float: right;
 }
 
 header{
