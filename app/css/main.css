@@ -72,6 +72,10 @@ a, a:link, a:visited, a:active{
     width: 23em;
 }
 
+.lift{
+    margin-top: -3em;
+}
+
 header{
     background-color: #FF6900;
     height: 4em;
@@ -86,4 +90,10 @@ footer{
     bottom: 0px;
     background-color: #B25A1D;
     margin-top: 3em;
+}
+
+@media all and (max-device-width: 769px){
+    .lift{
+        margin-top: -0.5em;
+    }
 }
