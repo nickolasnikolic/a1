@@ -24,6 +24,12 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'glob
 
     $scope.location = _.findWhere($scope.locations, where);
 
+    var map = new GMaps({
+        div: '#detailMap',
+        lat: -12.043333,
+        lng: -77.028333
+    });
+
 }])
 
 
