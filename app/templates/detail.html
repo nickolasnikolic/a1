@@ -12,10 +12,23 @@
       <p>Address: {{location.address1}} {{location.address2}}</p>
       <p>{{location.city}}, {{location.state}} {{location.zip}}</p>
     </div>
+    <div class="detailAmenities">
+      <p ng-repeat="day in location.hours">{{day}}</p>
 
-    <p ng-repeat="day in location.hours">{{day}}</p>
-
-    <p>Driving tip: {{location.driving_tip}}</p>
-    <p>{{location.sizes.join(' ')}}</p>
-     </div>
+      <p>Driving tip: {{location.driving_tip}}</p>
+      <p>{{location.sizes.join(' ')}}</p>
+    </div>
+    <div id="detailMap">
+      placeholder
+    </div>
+  </div>
 </section>
+<aside>
+  <ul>
+    <li ng-repeat="loc in locations">
+      <p class="locationTitle">{{loc.name}}</p>
+      <p class="locationPhone">{{loc.phone}}</p>
+      <p class="locationDistance">{{loc.distance}}</p>
+    </li>
+  </ul>
+</aside>

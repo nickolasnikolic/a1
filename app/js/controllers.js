@@ -4,6 +4,13 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
 
     $scope.locations = globals.locations;
 
+    $scope.getDistance = function(){
+        var zip = $('#zip').val();
+        if(zip.length > 4){
+            //pull distance matrix from google maps
+        }
+    };
+
 }])
 
 sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'globals', function($scope, $state, $stateParams, globals) {
@@ -12,9 +19,15 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'glob
 
     where.name = $stateParams.location;
 
-    var locations = globals.locations;
+    $scope.locations = globals.locations;
 
-    $scope.location = _.findWhere(locations, where);
+    $scope.location = _.findWhere($scope.locations, where);
+
+    //set map in place
+    var map = new google.maps.Map(document.getElementById('detailMap'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+    });
 
 }])
 

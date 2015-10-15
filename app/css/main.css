@@ -18,6 +18,10 @@ strong em{
     font-family: 'tt_firsextrabold_italic';
 }
 
+td{
+    padding: 1em;
+}
+
 .description{
     min-height: 10em;
 }
