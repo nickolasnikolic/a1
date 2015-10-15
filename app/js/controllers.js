@@ -25,7 +25,7 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'glob
     $scope.location = _.findWhere($scope.locations, where);
 
     //set map in place
-    $scope.map = { center: { address: $scope.location.address }, zoom: 8 };
+    $scope.map = { center: { address: $scope.location.address1 }, zoom: 8 };
 }])
 
 sApp.controller('ContactController', ['$scope', '$state', function($scope, $state) {}])
