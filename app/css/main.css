@@ -53,8 +53,10 @@ a{
 header{
     background-color: #FF6900;
     height: 7em;
+    margin-bottom: 3em;
 }
 
 footer{
     background-color: #B25A1D;
+    margin-top: 3em;
 }
