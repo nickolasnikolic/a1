@@ -1,6 +1,6 @@
 html,body{
     font-family: 'tt_firsregular';
-    background-color: white;
+    background-color: #FF8411;
     background-image: url(../images/cubes/cubes_hi.png);
 }
 
@@ -32,7 +32,7 @@ td{
     background-color: white;
     padding: 1em;
     border-radius: 7px;
-    box-shadow: 3px 3px 9px #FFA754;
+    box-shadow: 3px 3px 9px #4EC9EA;
 }
 
 .uibg{
@@ -129,13 +129,7 @@ a, a:link, a:visited, a:active{
 .lift-1{
     margin-top: -1em;
 }
-/*
-.movingGraphic{
-    height: 300px;
-    width: 200px;
-    background-image: url(../images/movers.jpeg);
-}
-*/
+
 header{
     padding: 0;
 }
@@ -152,8 +146,5 @@ footer{
     }
     .ui{
         box-shadow: none;
-    }
-    .movingGraphic{
-        display: none;
     }
 }
