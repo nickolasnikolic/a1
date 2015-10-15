@@ -14,7 +14,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
 
 }])
 
-sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'globals', function($scope, $state, $stateParams, uiGmapGoogleMapApi, globals) {
+sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'globals', function($scope, $state, $stateParams, globals) {
 
     var where = {};
 
