@@ -110,7 +110,7 @@ header{
 
 footer{
     font-family: 'tt_firslight';
-    height: 7em;
+    padding: 1em;
     position: absolute;
     left: 0px;
     bottom: 0px;
