@@ -9,9 +9,9 @@
       <div class="detailAmenities col-sm-12 col-md-6">
         <p>{{location.amenities}}</p>
         <p>{{location.sizes.join(' ')}}</p>
-        <p ng-repeat="(key,value) in location.hours">{{key}}: {{value}}</p>
+        <p ng-repeat="(key,value) in location.office.hours">{{key}}: {{value}}</p>
 
-        <p>Driving tip: {{location.driving_tip}}</p>
+        <p ng-show="location.driving_tip">Driving tip: {{location.driving_tip}}</p>
       </div>
       <div id="detailMap" class="col-sm-12 col-md-4 lift-4">
         <map center="-34.397, 150.644" zoom="8"></map>
