@@ -31,8 +31,8 @@
       <h3>Other locations: </h3>
       <li ng-repeat="loc in locations">
         <a ui-sref="location({location:loc.name })">
-          <span class="locationTitle">{{loc.name}} </span>
-          <span class="locationDistance">{{loc.distanceToTravel}}</span>
+          <span class="locationTitle">{{loc.name}} - {{loc.city}}</span>
+          <span ng-if="loc.distanceToTravel" class="locationDistance"> - {{loc.distanceToTravel}} miles</span>
         </a>
       </li>
     </ul>
