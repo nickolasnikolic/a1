@@ -314,37 +314,67 @@ sApp.factory('globals', function() {
             sizes:[]
         },{
             id: 11,
-            name: 'All One Self Storage LLC',
-            phone: '1-262-886-9395',
+            name: 'Badger Storage',
+            phone: '1-262-553-9800',
             email: 'Sturtevantstorage@gmail.com',
             fax: '1-262-458-4286',
-            after_hours_phone: '1-262-995-4884',
-            address1: '1630 Wisconsin St.',
+            after_hours_phone: '1-262-822-2851',
+            address1: '1280 Sheridan Road',
             address2: '',
-            city: 'Sturtevant',
+            city: 'Kenosha',
             state: 'WI',
-            zip: '53177',
+            zip: '53140',
             images:[],
             office: {
                 hours:{
-                    monday: '9am-2:30pm',
-                    tuesday: '2pm-6pm',
-                    wednesday: '10am-2pm',
-                    thursday: '10am-2pm',
-                    friday: '10am-2pm',
-                    saturday: '10am-2pm',
+                    monday: '2pm-5pm',
+                    tuesday: '2pm-5pm',
+                    wednesday: '2pm-5pm',
+                    thursday: '2pm-5pm',
+                    friday: '2pm-5pm',
+                    saturday: '10am-1pm',
                     sunday: 'by appointment'
                 }
             },
-            driving_tip: 'Located at the corner of Hwy 20 and Hwy H, next to the Amtrack Station',
+            driving_tip: 'Located at the Corner of Hwy E and Hwy 32. 1 Mile East of Parkside College. 1 Mile of North of Carthage College.',
             amenities: '',
             sizes:[
                 '5x5','5x10', '10x10',
                 '10x15', '10x20', '10x25',
-                '10x30', '10x40', '20x20', '20x30',
-                '20x40'
+                '10x30', '10x40'
             ]
-        },
+        },{
+            id: 12,
+            name: 'Badger Storage',
+            phone: '1-262-597-5444',
+            email: 'Sturtevantstorage@gmail.com',
+            fax: '1-262-458-4286',
+            after_hours_phone: '1-262-995-4884',
+            address1: '1280 Sheridan Road',
+            address2: '',
+            city: 'Kenosha',
+            state: 'WI',
+            zip: '53140',
+            images:[],
+            office: {
+                hours:{
+                    monday: '2pm-5pm',
+                    tuesday: '10am-1pm',
+                    wednesday: '10am-1pm',
+                    thursday: '10am-1pm',
+                    friday: '10am-1pm',
+                    saturday: '10am-1pm',
+                    sunday: 'by appointment'
+                }
+            },
+            driving_tip: '',
+            amenities: '',
+            sizes:[
+                '5x5','5x10', '10x10',
+                '10x15', '10x20', '10x25',
+                '10x30', '10x40'
+            ]
+        }
     ];
 
     return Service;

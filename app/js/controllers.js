@@ -74,7 +74,7 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'glob
 
     var where = {};
 
-    where.name = $stateParams.location;
+    where.id = $stateParams.location;
 
     $scope.locations = globals.locations;
 
