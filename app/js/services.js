@@ -5,7 +5,7 @@ sApp.factory('globals', function() {
     Service.locations = [
         {
             id: 1,
-            name: 'Waukesha',
+            name: 'All One Self Storage LLC',
             phone: '1-262-547-8989',
             email: 'Alloneselfstorage@gmail.com',
             fax: '1-262-970-8989',
@@ -36,7 +36,7 @@ sApp.factory('globals', function() {
             ]
         },{
             id: 2,
-            name: 'Pewaukee',
+            name: 'All One Self Storage LLC',
             phone: '1-262-547-8989',
             email: 'Alloneselfstorage@gmail.com',
             fax: '1-262-970-8989',
@@ -66,7 +66,7 @@ sApp.factory('globals', function() {
             ]
         },{
             id: 3,
-            name: 'Pewaukee',
+            name: 'All One Self Storage LLC',
             phone: '1-262-547-8989',
             email: 'Alloneselfstorage@gmail.com',
             fax: '1-262-970-8989',
@@ -97,7 +97,7 @@ sApp.factory('globals', function() {
             ]
         },{
             id: 4,
-            name: 'Muskego',
+            name: 'All One Self Storage LLC',
             phone: '1-262-547-8989',
             email: 'Alloneselfstorage@gmail.com',
             fax: '1-262-970-8989',
