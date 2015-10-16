@@ -23,7 +23,7 @@
       <th>Name</th>
       <th>City</th>
       <th ng-show="locations[0].distanceToTravel">distance</th>
-      <th ng-show="locations[0].distanceToTravel">estimated travel time</th>
+      <th ng-show="locations[0].distanceToTravel">travel time</th>
     </thead>
     <tr ng-repeat="loc in locations | orderBy: -loc.distanceToTravel">
       <td class="locationTitle">
