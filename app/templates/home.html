@@ -1,10 +1,12 @@
 <div class="uibg">
 <section class="marketing">
-  <article><p>Visa & MasterCard Accepted</p></article>
-  <article><p>Locally Owned and Operated</p></article>
-  <article><p>Let us help you with your storage needs!</p></article>
-  <article><p>Clean - Gated - Low Prices</p></article>
-  <article><p>Click on a location below that will best suit your needs</p></article>
+  <article>
+    <p>Visa & MasterCard Accepted</p>
+    <p>Locally Owned and Operated</p>
+    <p>Let us help you with your storage needs!</p>
+    <p>Clean - Gated - Low Prices</p>
+    <p>Click on a location below that will best suit your needs</p>
+  </article>
 </section>
 <section class="distanceTable little-up-top">
   <div class="zipFinder container">
@@ -15,18 +17,18 @@
   </div>
   <table>
     <thead>
-      <th>Location</th>
-      <th>phone</th>
+      <th>Name</th>
+      <th>City</th>
       <th>distance</th>
       <th>estimated travel time</th>
     </thead>
-    <tr ng-repeat="loc in locations | orderBy: -distanceToTravel">
+    <tr ng-repeat="loc in locations | orderBy: -loc.distanceToTravel">
       <td class="locationTitle">
-        <a ui-sref="location({location:loc.name })">
+        <a ui-sref="location({location:loc.id })">
           <span>{{loc.name}} </span>
         </a>
       </td>
-      <td class="locationPhone">{{loc.phone}}</td>
+      <td class="locationPhone">{{loc.city}}</td>
       <td class="locationDistance">{{loc.distanceToTravel | number: 2}} miles</td>
       <td class="locationTimeAway">{{loc.timeToTravel | number: 2}} minutes</td>
     </tr>

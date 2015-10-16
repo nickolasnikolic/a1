@@ -285,6 +285,65 @@ sApp.factory('globals', function() {
                 '10x25','10x30', '10x40',
                 '24x50'
             ]
+        },{
+            id: 10,
+            name: 'All One Self Storage LLC',
+            phone: '1-262-547-8989',
+            email: 'Alloneselfstorage@gmail.com',
+            fax: '1-262-970-8989',
+            after_hours_phone: '1-262-352-8989',
+            address1: 'Commercial Dr',
+            address2: '',
+            city: 'Mukwanago',
+            state: 'WI',
+            zip: '53149',
+            images:[],
+            office: {
+                hours:{
+                    monday: 'by appointment',
+                    tuesday: 'by appointment',
+                    wednesday: 'by appointment',
+                    thursday: 'by appointment',
+                    friday: 'by appointment',
+                    saturday: 'by appointment',
+                    sunday: 'by appointment'
+                }
+            },
+            driving_tip: 'Located just south of the intersection of Hwy 59 and Hwy 83',
+            amenities: 'Fenced and gated outdoor parking.',
+            sizes:[]
+        },{
+            id: 11,
+            name: 'All One Self Storage LLC',
+            phone: '1-262-886-9395',
+            email: 'Sturtevantstorage@gmail.com',
+            fax: '1-262-458-4286',
+            after_hours_phone: '1-262-995-4884',
+            address1: '1630 Wisconsin St.',
+            address2: '',
+            city: 'Sturtevant',
+            state: 'WI',
+            zip: '53177',
+            images:[],
+            office: {
+                hours:{
+                    monday: '9am-2:30pm',
+                    tuesday: '2pm-6pm',
+                    wednesday: '10am-2pm',
+                    thursday: '10am-2pm',
+                    friday: '10am-2pm',
+                    saturday: '10am-2pm',
+                    sunday: 'by appointment'
+                }
+            },
+            driving_tip: 'Located at the corner of Hwy 20 and Hwy H, next to the Amtrack Station',
+            amenities: '',
+            sizes:[
+                '5x5','5x10', '10x10',
+                '10x15', '10x20', '10x25',
+                '10x30', '10x40', '20x20', '20x30',
+                '20x40'
+            ]
         },
     ];
 
