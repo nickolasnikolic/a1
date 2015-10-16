@@ -1,3 +1,40 @@
-<section>
-  <p>location detail: {{location.name}}</p>
-</section>
+<div class="container detail">
+  <section class="col-sm-12 col-md-8">
+    <h2 class="detailTitle"><strong>Location: </strong>{{location.name}}</h2>
+    <div class="detailImage">
+      <img ng-src="images/{{location.name}}-little.jpg" />
+    </div>
+    <h3 class="pull-left">Amenities: </h3>
+    <div class="detail pull-right">
+      <div class="detailAmenities col-sm-12 col-md-6">
+        <p ng-repeat="(key,value) in location.hours">{{key}}: {{value}}</p>
+
+        <p>Driving tip: {{location.driving_tip}}</p>
+        <p>{{location.sizes.join(' ')}}</p>
+      </div>
+      <div id="detailMap" class="col-sm-12 col-md-4 lift-4">
+        <map center="-34.397, 150.644" zoom="8"></map>
+      </div>
+    </div>
+  </section>
+  <aside class="col-sm-12 col-md-4">
+    <h3>Contact: </h3>
+    <div class="detailContact">
+      <p><strong>Phone: </strong>{{location.phone}}</p>
+      <p>email: {{location.email}}</p>
+      <p>FAX: {{location.fax}}</p>
+      <p>After-Hours Phone: {{location.after_hours_phone}}</p>
+      <p>Address: {{location.address1}} {{location.address2}}</p>
+      <p>{{location.city}}, {{location.state}} {{location.zip}}</p>
+    </div>
+    <ul>
+      <h3>Other locations: </h3>
+      <li ng-repeat="loc in locations">
+        <a ui-sref="location({location:loc.name })">
+          <span class="locationTitle">{{loc.name}} </span>
+          <span class="locationDistance">{{loc.distanceToTravel}}</span>
+        </a>
+      </li>
+    </ul>
+  </aside>
+</div>

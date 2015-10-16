@@ -1,9 +1,15 @@
 html,body{
     font-family: 'tt_firsregular';
+    background-color: #EAFBFF;
+    background-image: url(../images/cubes/cubes-mine.png);
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'tt_firsbold';
+}
+
+h1{
+    font-size: 3em;
 }
 
 em{
@@ -18,28 +24,127 @@ strong em{
     font-family: 'tt_firsextrabold_italic';
 }
 
-.description{
-    min-height: 10em;
+td{
+    padding: 1em;
 }
 
-.list{
-    border: 1px thin black;
-    border-radius: 3%;
+.ui{
+    background-color: white;
+    padding: 1em;
+    border-radius: 7px;
+    box-shadow: 3px 3px 9px #4EC9EA;
 }
+
+.uibg{
+    background-image: url(../images/movers.jpeg);
+    background-repeat: no-repeat;
+    background-position-x: 507px;
+    background-position-y: -138px;
+}
+
+.zipFinder{
+    width: auto;
+    margin: auto;
+}
+
+.zipFinder form{
+    margin-left: -1em;
+}
+
+.zipFinder input[type='text']{
+    width: 22em;
+}
+
+.distanceTable th{
+    border: none;
+    font-family: 'tt_firsextrabold';
+}
+
+.distanceTable td{
+    border: 1px solid white;
+}
+
 .little-up-top{
     margin-top: 1em;
 }
 .little-down-below{
     margin-top: 1em;
 }
-footer{
-    font-family: 'tt_firslight';
-}
 
-a{
+a, a:link, a:visited, a:active{
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .social-share > div{
     margin-bottom: 1em;
+}
+
+.detail{
+    height: 100%;
+}
+
+.detailTitle{
+    margin-top: 0px;
+}
+
+.detailImage img{
+    width: 100%;
+}
+
+#detailMap{
+    float: right;
+    background-color: #EAFBFF;
+    padding: 1.5em;
+    height: 23em;
+    width: 23em;
+}
+
+.detail aside{
+    padding-top: 1.5em;
+}
+
+.detailContact{
+    padding-left: 2em;
+}
+
+.detail aside li{
+    padding-left: 2em;
+}
+
+
+.lift-4{
+    margin-top: -4em;
+}
+
+.lift-3{
+    margin-top: -3em;
+}
+
+.lift-2{
+    margin-top: -2em;
+}
+
+.lift-1{
+    margin-top: -1em;
+}
+
+header{
+    padding: 0;
+}
+
+footer{
+    font-family: 'tt_firslight';
+    padding: 1em;
+    margin-top: 3em;
+}
+
+@media all and (max-device-width: 769px){
+    .lift{
+        margin-top: -0.5em;
+    }
+    .ui{
+        box-shadow: none;
+    }
 }
