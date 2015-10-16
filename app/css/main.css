@@ -1,7 +1,7 @@
 html,body{
     font-family: 'tt_firsregular';
     background-color: #EAFBFF;
-    background-image: url(../images/cubes/cubes-mine.png);
+    background-image: url(../images/cubes/cubes-mine.png) url(../images/cubes/60-lines.png);
 }
 
 h1,h2,h3,h4,h5,h6{
