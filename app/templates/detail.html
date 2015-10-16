@@ -10,8 +10,6 @@
         <p>{{location.amenities}}</p>
         <p>{{location.sizes.join(' ')}}</p>
         <p ng-repeat="(key,value) in location.office.hours">{{key}}: {{value}}</p>
-
-        <p ng-show="location.driving_tip">Driving tip: {{location.driving_tip}}</p>
       </div>
       <div id="detailMap" class="col-sm-12 col-md-4 lift-4">
         <map center="-34.397, 150.644" zoom="8"></map>
@@ -27,6 +25,7 @@
       <p>After-Hours Phone: {{location.after_hours_phone}}</p>
       <p>Address: {{location.address1}} {{location.address2}}</p>
       <p>{{location.city}}, {{location.state}} {{location.zip}}</p>
+      <p ng-show="location.driving_tip != ''">Driving tip: {{location.driving_tip}}</p>
     </div>
     <ul>
       <h3>Other locations: </h3>
