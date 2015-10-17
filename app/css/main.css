@@ -81,6 +81,10 @@ a, a:link, a:visited, a:active{
     color: black;
 }
 
+.locationTitle a, .locationLink{
+    text-decoration: underline;
+}
+
 .social-share > div{
     margin-bottom: 1em;
 }
