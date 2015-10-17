@@ -14,7 +14,7 @@
     </div>
     <h3>Other locations: </h3>
     <ul>
-      <li ng-repeat="loc in locations | orderBy: 'timeToTravel'">
+      <li ng-repeat="loc in locations | orderBy: 'timeToTravel'" ng-hide="$first">
         <a class="locationLink" ui-sref="location({location:loc.id })">
           <spanclass="locationSpan">{{loc.name}} - {{loc.city}}</span>
           <span ng-if="loc.timeToTravel" class="locationDistance"> - {{loc.timeToTravel}}</span>
@@ -32,7 +32,7 @@
         <p>{{location.amenities}}</p>
         <p>{{location.sizes.join(' ')}}</p>
         <h3>Office hours: </h3>
-        <p ng-repeat="(key,value) in location.office.hours">{{key}}: {{value}}</p>
+        <p ng-repeat="(key,value) in location.office.hours track by $index">{{key}}: {{value}}</p>
       </div>
 
       <div id="detailMap" class="col-sm-12 col-md-4 lift-4">
