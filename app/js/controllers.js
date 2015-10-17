@@ -22,8 +22,10 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                     unitSystem: google.maps.UnitSystem.IMPERIAL,
                 }, function (response, status) {
                     console.log(response);
-                    element.distanceToTravel = response.rows[0].elements[0].distance.text;
-                    $scope.$apply();
+                _.each( $scope.locations, function(element,index,list){
+                    element.distanceToTravel = response.rows[0].elements[index].distance.text;
+                });
+                 $scope.$apply();
             });
         }
             //otherwise here
