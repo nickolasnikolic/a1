@@ -7,7 +7,6 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
     $scope.getDistances = function(){
         var zip = $('#zip').val();
         if(zip.length > 4){
-            var map;
             var latlng1;
             var latlng2;
 
@@ -17,7 +16,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                     if (status == 'OK') {
                         latlng1 = results[0].geometry.location;
 
-                        _.each( $scope.locations, function( element, index, list ){
+                        _.each($scope.locations, function (element, index, list) {
 
                             var address = element.address1 + ' ' + element.zip;
 
@@ -26,9 +25,6 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                                 callback: function (results, status) {
                                     if (status == 'OK') {
                                         latlng2 = results[0].geometry.location;
-                                        var origin2 = "Greenwich, England";
-                                        var destinationA = "Stockholm, Sweden";
-                                        var destinationB = new google.maps.LatLng(50.087692, 14.421150);
 
                                         var service = new google.maps.DistanceMatrixService();
                                         service.getDistanceMatrix(
@@ -40,20 +36,19 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                                             }, function (response, status) {
                                                 console.log(response);
                                             });
-                                        });
-
                                     }
 
                                 }
+
                             });
-                        } )
-                        //otherwise here
+                        });
                     }
                 }
             });
+            //otherwise here
         }
-    };
 
+    };
 }])
 
 sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'globals', function($scope, $state, $stateParams, globals) {
