@@ -7,48 +7,28 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
     $scope.getDistances = function(){
         var zip = $('#zip').val();
         if(zip.length > 4){
-            var latlng1;
-            var latlng2;
+            var addresses = [];
+            _.each($scope.locations, function (element, index, list) {
 
-            GMaps.geocode({
-                address: zip,
-                callback: function (results, status) {
-                    if (status == 'OK') {
-                        latlng1 = results[0].geometry.location;
+                addresses.push( element.address1 + ' ' + element.address2 + ' ' element.zip );
 
-                        _.each($scope.locations, function (element, index, list) {
-
-                            var address = element.address1 + ' ' + element.zip;
-
-                            GMaps.geocode({
-                                address: address,
-                                callback: function (results, status) {
-                                    console.log(results);
-                                    latlng2 = results[0].geometry.location;
-
-                                    var service = new google.maps.DistanceMatrixService();
-                                    service.getDistanceMatrix(
-                                        {
-                                            origins: [latlng1],
-                                            destinations: [latlng2],
-                                            travelMode: google.maps.TravelMode.DRIVING,
-                                            unitSystem: google.maps.UnitSystem.IMPERIAL,
-                                        }, function (response, status) {
-                                            //console.log(response);
-                                            element.distanceToTravel = response.rows[0].elements[0].distance.text;
-                                            $scope.$apply();
-                                        });
-                                }
-
-                            });
-                        });
-                    }
-                }
             });
-            //otherwise here
-        }
 
+            var service = new google.maps.DistanceMatrixService();
+            service.getDistanceMatrix({
+                    origins: [zip],
+                    destinations: addresses,
+                    travelMode: google.maps.TravelMode.DRIVING,
+                    unitSystem: google.maps.UnitSystem.IMPERIAL,
+                }, function (response, status) {
+                    console.log(response);
+                    element.distanceToTravel = response.rows[0].elements[0].distance.text;
+                    $scope.$apply();
+            });
+        }
+            //otherwise here
     };
+
 }])
 
 sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'globals', function($scope, $state, $stateParams, globals) {
