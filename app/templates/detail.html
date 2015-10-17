@@ -17,7 +17,7 @@
       <li ng-repeat="loc in locations">
         <a class="locationLink" ui-sref="location({location:loc.id })">
           <spanclass="locationSpan">{{loc.name}} - {{loc.city}}</span>
-          <span ng-if="loc.timeToTravel" class="locationDistance"> - {{loc.timeToTravel}} away</span>
+          <span ng-if="loc.timeToTravel" class="locationDistance"> - {{loc.timeToTravel}}</span>
         </a>
       </li>
     </ul>
