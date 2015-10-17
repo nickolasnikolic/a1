@@ -23,24 +23,21 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                             GMaps.geocode({
                                 address: address,
                                 callback: function (results, status) {
-                                    if (status == 'OK') {
-                                        latlng2 = results[0].geometry.location;
+                                    console.log(status);
+                                    latlng2 = results[0].geometry.location;
 
-                                        var service = new google.maps.DistanceMatrixService();
-                                        service.getDistanceMatrix(
-                                            {
-                                                origins: [latlng1],
-                                                destinations: [latlng2],
-                                                travelMode: google.maps.TravelMode.DRIVING,
-                                                unitSystem: google.maps.UnitSystem.IMPERIAL,
-                                            }, function (response, status) {
-                                                console.log(response);
-                                                element.timeToTravel = response.rows[0].elements[0].duration.text;
-                                                element.distanceToTravel = response.rows[0].elements[0].distance.text;
-                                                $scope.$apply();
-                                            });
-                                    }
-
+                                    var service = new google.maps.DistanceMatrixService();
+                                    service.getDistanceMatrix(
+                                        {
+                                            origins: [latlng1],
+                                            destinations: [latlng2],
+                                            travelMode: google.maps.TravelMode.DRIVING,
+                                            unitSystem: google.maps.UnitSystem.IMPERIAL,
+                                        }, function (response, status) {
+                                            console.log(response);
+                                            element.distanceToTravel = response.rows[0].elements[0].distance.text;
+                                            $scope.$apply();
+                                        });
                                 }
 
                             });
