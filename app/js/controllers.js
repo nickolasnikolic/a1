@@ -75,6 +75,18 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'glob
         }
     });
 
+    $scope.sortTimeToTravel = function( location ){
+
+        if( location.timeToTravel ) {
+
+            var stringy = location.timeToTravel;
+
+            return Number(stringy.replace(' mins', ''));
+        }else{
+            return 1;
+        }
+    };
+
 }])
 
 
