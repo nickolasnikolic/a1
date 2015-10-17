@@ -1,6 +1,6 @@
 <div class="container detail">
   <h2 class="detailTitle"><strong>Location: </strong>{{location.name}} - {{location.city}}</h2>
-  <aside class="col-sm-12 col-md-4 ">
+  <aside class="col-sm-12 col-md-4 col-md-push-8">
     <h3>Contact: </h3>
     <div class="detailContact">
       <p><strong>Phone: </strong><a ng-href="tel:{{location.phone}}">{{location.phone}}</a></p>
@@ -22,7 +22,7 @@
       </li>
     </ul>
   </aside>
-  <section class="col-sm-12 col-md-8">
+  <section class="col-sm-12 col-md-8 col-md-pull-4">
     <div class="detailImage">
       <img ng-src="images/{{location.city}}-little.jpg" />
     </div>
