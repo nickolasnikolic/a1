@@ -25,7 +25,7 @@
       <!--<th ng-show="locations[0].distanceToTravel">distance</th>-->
       <th ng-show="locations[0].timeToTravel">travel time</th>
     </thead>
-    <tr ng-repeat="loc in locations | orderBy: -loc.distanceToTravel">
+    <tr ng-repeat="loc in locations | orderBy: -loc.timeToTravel">
       <td class="locationTitle">
         <a ui-sref="location({location:loc.id })">
           <span>{{loc.name}} </span>
