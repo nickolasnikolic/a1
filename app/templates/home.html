@@ -27,10 +27,10 @@
     </thead>
     <tr ng-repeat="loc in locations | orderBy: 'timeToTravel'">
       <td class="locationTitle">
+        <span ng-show="$first && loc.timeToTravel" class="label label-success">closest!</span>
         <a ui-sref="location({location:loc.id })">
           <span>{{loc.name}} </span>
         </a>
-        <span ng-show="$first && loc.timeToTravel" class="label label-success">closest!</span>
       </td>
       <td class="locationPhone">{{loc.city}}</td>
       <td ng-show="locations[0].timeToTravel" class="locationDistance">{{loc.distanceToTravel}}</td>
