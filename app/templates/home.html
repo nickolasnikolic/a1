@@ -22,8 +22,8 @@
     <thead>
       <th>Name</th>
       <th>City</th>
-      <th ng-show="locations[0].distanceToTravel">distance</th>
-      <th ng-show="locations[0].distanceToTravel">travel time</th>
+      <!--<th ng-show="locations[0].distanceToTravel">distance</th>-->
+      <th ng-show="locations[0].timeToTravel">travel time</th>
     </thead>
     <tr ng-repeat="loc in locations | orderBy: -loc.distanceToTravel">
       <td class="locationTitle">
@@ -32,8 +32,8 @@
         </a>
       </td>
       <td class="locationPhone">{{loc.city}}</td>
-      <td ng-show="locations[0].distanceToTravel" class="locationDistance">{{loc.distanceToTravel | number: 1}} miles</td>
-      <td ng-show="locations[0].distanceToTravel" class="locationTimeAway">{{loc.timeToTravel | number: 0}} minutes</td>
+      <!--<td ng-show="locations[0].timeToTravel" class="locationDistance">{{loc.distanceToTravel | number: 1}} miles</td>-->
+      <td ng-show="locations[0].timeToTravel" class="locationTimeAway">{{loc.timeToTravel | number: 0}} minutes</td>
     </tr>
   </table>
 </section>
