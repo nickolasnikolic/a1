@@ -9,9 +9,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
         if(zip.length > 4){
             var addresses = [];
             _.each($scope.locations, function (element, index, list) {
-
                 addresses.push( element.address1 + ' ' + element.address2 + ' ' + element.zip );
-
             });
 
             var service = new google.maps.DistanceMatrixService();
@@ -21,7 +19,6 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                     travelMode: google.maps.TravelMode.DRIVING,
                     unitSystem: google.maps.UnitSystem.IMPERIAL,
                 }, function (response, status) {
-                    console.log(response);
                 _.each( $scope.locations, function(element,index,list){
                     element.distanceToTravel = response.rows[0].elements[index].distance.text;
                     element.timeToTravel = response.rows[0].elements[index].duration.text;
