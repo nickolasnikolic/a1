@@ -10,7 +10,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
             var addresses = [];
             _.each($scope.locations, function (element, index, list) {
 
-                addresses.push( element.address1 + ' ' + element.address2 + ' ' element.zip );
+                addresses.push( element.address1 + ' ' + element.address2 + ' ' + element.zip );
 
             });
 
