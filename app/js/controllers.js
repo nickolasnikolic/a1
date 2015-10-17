@@ -28,6 +28,10 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
         }
     };
 
+    $scope.sortDistanceToTravel = function( location ){
+        return Number(location.distanceToTravel);
+    };
+
 }])
 
 sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'globals', function($scope, $state, $stateParams, globals) {
