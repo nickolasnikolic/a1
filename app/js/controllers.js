@@ -30,7 +30,9 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
 
     $scope.sortDistanceToTravel = function( location ){
 
-        return Number(location.distanceToTravel.replace(' mil', ''));
+        var stringy = location.distanceToTravel;
+
+        return Number(stringy.replace(' mi', ''));
     };
 
 }])
