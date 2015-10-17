@@ -34,6 +34,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                                                 travelMode: google.maps.TravelMode.DRIVING,
                                                 unitSystem: google.maps.UnitSystem.IMPERIAL,
                                             }, function (response, status) {
+                                                console.log(response);
                                                 element.timeToTravel = response.rows[0].elements[0].duration.text;
                                                 element.distanceToTravel = response.rows[0].elements[0].distance.text;
                                             });
