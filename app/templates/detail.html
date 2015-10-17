@@ -32,7 +32,16 @@
         <p>{{location.amenities}}</p>
         <p>{{location.sizes.join(' ')}}</p>
         <h3>Office hours: </h3>
-        <p ng-repeat="(key,value) in location.office.hours track by $index">{{key}}: {{value}}</p>
+        <ul class="daysOfTheWeek">
+          <li>monday: {{location.office.hours['monday']}}</li>
+          <li>tuesday: {{location.office.hours['tuesday']}}</li>
+          <li>wednesday: {{location.office.hours['wednesday']}}</li>
+          <li>thursday: {{location.office.hours['thursday']}}</li>
+          <li>friday: {{location.office.hours['friday']}}</li>
+          <li>saturday: {{location.office.hours['saturday']}}</li>
+          <li>sunday: {{location.office.hours['sunday']}}</li>
+        </ul>
+
       </div>
 
       <div id="detailMap" class="col-sm-12 col-md-4 lift-4">
