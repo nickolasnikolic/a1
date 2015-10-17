@@ -62,6 +62,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                                 }
                             });
                         } )
+                        //otherwise here
                     }
                 }
             });
