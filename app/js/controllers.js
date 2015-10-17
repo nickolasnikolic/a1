@@ -23,7 +23,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                             GMaps.geocode({
                                 address: address,
                                 callback: function (results, status) {
-                                    console.log(results[0].geometry.location);
+                                    console.log(results);
                                     latlng2 = results[0].geometry.location;
 
                                     var service = new google.maps.DistanceMatrixService();
@@ -34,7 +34,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                                             travelMode: google.maps.TravelMode.DRIVING,
                                             unitSystem: google.maps.UnitSystem.IMPERIAL,
                                         }, function (response, status) {
-                                            console.log(response);
+                                            //console.log(response);
                                             element.distanceToTravel = response.rows[0].elements[0].distance.text;
                                             $scope.$apply();
                                         });
