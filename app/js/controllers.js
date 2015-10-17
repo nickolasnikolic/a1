@@ -26,36 +26,20 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                                 callback: function (results, status) {
                                     if (status == 'OK') {
                                         latlng2 = results[0].geometry.location;
-                                        map = new GMaps({
-                                            div: '#map',
-                                            lat: latlng1.lat(),
-                                            lng: latlng1.lng(),
-                                            zoom: 12
-                                        });
+                                        var origin2 = "Greenwich, England";
+                                        var destinationA = "Stockholm, Sweden";
+                                        var destinationB = new google.maps.LatLng(50.087692, 14.421150);
 
-                                        map.drawRoute({
-                                            origin: [latlng1.lat(), latlng1.lng()],
-                                            destination: [latlng2.lat(), latlng2.lng()],
-                                            travelMode: 'driving',
-                                            strokeColor: '#131540',
-                                            strokeOpacity: 0.6,
-                                            strokeWeight: 6
-                                        });
-                                        map.getRoutes({
-                                            origin: [latlng1.lat(), latlng1.lng()],
-                                            destination: [latlng2.lat(), latlng2.lng()],
-                                            callback: function (e) {
-                                                var time = 0;
-                                                var distance = 0;
-                                                for (var i=0; i<e[0].legs.length; i++) {
-                                                    time += e[0].legs[i].duration.value;
-                                                    distance += e[0].legs[i].distance.value;
-                                                }
-                                                console.log(time + " " + distance);
-                                                element.timeToTravel = time/60;
-                                                //element.distanceToTravel = distance/2570;
-                                                $scope.$apply(); //kick it to the ui
-                                            }
+                                        var service = new google.maps.DistanceMatrixService();
+                                        service.getDistanceMatrix(
+                                            {
+                                                origins: [latlng1],
+                                                destinations: [latlng2],
+                                                travelMode: google.maps.TravelMode.DRIVING,
+                                                unitSystem: google.maps.UnitSystem.IMPERIAL,
+                                            }, function (response, status) {
+                                                console.log(response);
+                                            });
                                         });
 
                                     }
