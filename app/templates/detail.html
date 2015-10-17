@@ -14,7 +14,7 @@
     </div>
     <h3>Other locations: </h3>
     <ul>
-      <li ng-repeat="loc in locations">
+      <li ng-repeat="loc in locations | orderBy: 'timeToTravel'">
         <a class="locationLink" ui-sref="location({location:loc.id })">
           <spanclass="locationSpan">{{loc.name}} - {{loc.city}}</span>
           <span ng-if="loc.timeToTravel" class="locationDistance"> - {{loc.timeToTravel}}</span>
