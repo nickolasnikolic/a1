@@ -29,9 +29,8 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
     };
 
     $scope.sortDistanceToTravel = function( location ){
-        console.log(location.distanceToTravel);
-        console.log(Number(location.distanceToTravel));
-        return Number(location.distanceToTravel);
+
+        return Number(location.distanceToTravel.replace(' mil', ''));
     };
 
 }])
