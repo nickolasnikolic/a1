@@ -15,6 +15,7 @@ sApp.factory('globals', function() {
             city: 'Waukesha',
             state: 'WI',
             zip: '53189',
+            coords: '',
             images:[],
             office: {
                 hours:{

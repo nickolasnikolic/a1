@@ -23,7 +23,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                             GMaps.geocode({
                                 address: address,
                                 callback: function (results, status) {
-                                    console.log(status);
+                                    console.log(results[0].geometry.location);
                                     latlng2 = results[0].geometry.location;
 
                                     var service = new google.maps.DistanceMatrixService();
