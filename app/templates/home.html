@@ -30,6 +30,7 @@
         <a ui-sref="location({location:loc.id })">
           <span>{{loc.name}} </span>
         </a>
+        <span ng-show="$first && loc.timeToTravel" class="badge">closest!</span>
       </td>
       <td class="locationPhone">{{loc.city}}</td>
       <td ng-show="locations[0].timeToTravel" class="locationDistance">{{loc.distanceToTravel}}</td>
