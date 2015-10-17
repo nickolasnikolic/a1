@@ -37,6 +37,7 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                                                 console.log(response);
                                                 element.timeToTravel = response.rows[0].elements[0].duration.text;
                                                 element.distanceToTravel = response.rows[0].elements[0].distance.text;
+                                                $scope.$apply();
                                             });
                                     }
 
