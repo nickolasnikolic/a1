@@ -25,10 +25,9 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
                 _.each( $scope.locations, function(element,index,list){
                     element.distanceToTravel = response.rows[0].elements[index].distance.text;
                 });
-                 $scope.$apply();
+                $scope.$apply();
             });
         }
-            //otherwise here
     };
 
 }])
