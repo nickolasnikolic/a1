@@ -351,29 +351,29 @@ sApp.factory('globals', function() {
             email: 'Sturtevantstorage@gmail.com',
             fax: '1-262-458-4286',
             after_hours_phone: '1-262-995-4884',
-            address1: '1280 Sheridan Road',
+            address1: '1630 Wisconsin St',
             address2: '',
-            city: 'Kenosha',
+            city: 'Sturtevant',
             state: 'WI',
-            zip: '53140',
+            zip: '53177',
             images:[],
             office: {
                 hours:{
-                    monday: '2pm-5pm',
-                    tuesday: '10am-1pm',
-                    wednesday: '10am-1pm',
-                    thursday: '10am-1pm',
-                    friday: '10am-1pm',
-                    saturday: '10am-1pm',
+                    monday: '9am-2:30pm',
+                    tuesday: '2pm-6pm',
+                    wednesday: '10am-2pm',
+                    thursday: '10am-2pm',
+                    friday: '10am-2pm',
+                    saturday: '10am-2pm',
                     sunday: 'by appointment'
                 }
             },
-            driving_tip: '',
+            driving_tip: 'Located at the corner of Hwy 20 and Hwy H, next to the Amtrack Station',
             amenities: '',
             sizes:[
                 '5x5','5x10', '10x10',
                 '10x15', '10x20', '10x25',
-                '10x30', '10x40'
+                '10x30', '10x40', '20x20', '20x30', '20x40'
             ]
         }
     ];
