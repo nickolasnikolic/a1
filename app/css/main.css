@@ -36,6 +36,7 @@ td{
 
 .uibg{
     background-image: url(../images/lock.jpeg);
+    background-position-x: 282px;
     background-repeat: no-repeat;
 }
 
