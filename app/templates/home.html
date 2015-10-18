@@ -1,51 +1,50 @@
 <div class="uibg">
-<section class="marketing">
-  <article class="marketingPhone">
-    <h2><a href="tel:12625478989">1-262-547-8989</a></h2>
-  </article>
-  <article class="marketingVerbiage">
-    <p>Visa & MasterCard Accepted</p>
-    <p>Locally Owned and Operated</p>
-    <p>Let us help you with your storage needs!</p>
-    <p>Clean - Gated - Low Prices</p>
-  </article>
-</section>
-<section class="distanceTable little-up-top">
-  <div class="zipFinder container">
-    <form>
-      <p><input type="text" placeholder="zip code" name="zip" id="zip" ng-change="getDistances()" ng-model="unitTest"/></p>
-      <p>
-        Minimum Unit size?
-        <select name="unitSize" id="unitSize" ng-model="unitSize">
-          <option selected="true" value="0">Not sure? Let us help! Dial 1-262-547-8989</option>
-          <option value="5">5' on the long side or smaller</option>
-          <option value="8">8' on the long side</option>
-          <option value="10">10' on the long side</option>
-          <option value="20">20x20 or bigger?</option>
-        </select>
-      </p>
-      <!--<button id="zipButton" ng-click="getDistances()">go</button>-->
-    </form>
-  </div>
-  <p>Click on a location below that will best suit your needs</p>
-  <table>
-    <thead>
-      <th>Name</th>
-      <th>City</th>
-      <th ng-show="locations[0].distanceToTravel">distance</th>
-      <th ng-show="locations[0].timeToTravel">travel time</th>
-    </thead>
-    <tr ng-repeat="loc in locations | orderBy: sortDistanceToTravel | filter: unitSize">
-      <td class="locationTitle">
-        <span ng-show="$first && loc.timeToTravel" class="label label-success">closest!</span>
-        <a ui-sref="location({location:loc.id })">
-          <span>{{loc.name}} </span>
-        </a>
-      </td>
-      <td class="locationPhone">{{loc.city}}</td>
-      <td ng-show="locations[0].timeToTravel" class="locationDistance">{{loc.distanceToTravel}}</td>
-      <td ng-show="locations[0].timeToTravel" class="locationTimeAway">{{loc.timeToTravel}}</td>
-    </tr>
-  </table>
-</section>
+  <section class="marketing">
+    <article class="marketingPhone">
+      <h2><a href="tel:12625478989">1-262-547-8989</a></h2>
+    </article>
+    <article class="marketingVerbiage">
+      <p>Visa & MasterCard Accepted</p>
+      <p>Locally Owned and Operated</p>
+      <p>Let us help you with your storage needs!</p>
+      <p>Clean - Gated - Low Prices</p>
+    </article>
+  </section>
+  <section class="distanceTable little-up-top">
+    <div class="zipFinder container">
+      <form>
+        <p><input type="text" placeholder="zip code" name="zip" id="zip" ng-change="getDistances()" ng-model="unitTest"/></p>
+        <p>
+          Minimum Unit size?
+          <select name="unitSize" id="unitSize" ng-model="unitSize">
+            <option selected="true" value="0">Not sure? Let us help! Dial 1-262-547-8989</option>
+            <option value="5">5' on the long side or smaller</option>
+            <option value="8">8' on the long side</option>
+            <option value="10">10' on the long side</option>
+            <option value="20">20x20 or bigger?</option>
+          </select>
+        </p>
+      </form>
+    </div>
+    <p>Click on a location below that will best suit your needs</p>
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>City</th>
+        <th ng-show="locations[0].distanceToTravel">distance</th>
+        <th ng-show="locations[0].timeToTravel">travel time</th>
+      </thead>
+      <tr ng-repeat="loc in locations | orderBy: sortDistanceToTravel | filter: unitSize">
+        <td class="locationTitle">
+          <span ng-show="$first && loc.timeToTravel" class="label label-success">closest!</span>
+          <a ui-sref="location({location:loc.id })">
+            <span>{{loc.name}} </span>
+          </a>
+        </td>
+        <td class="locationPhone">{{loc.city}}</td>
+        <td ng-show="locations[0].timeToTravel" class="locationDistance">{{loc.distanceToTravel}}</td>
+        <td ng-show="locations[0].timeToTravel" class="locationTimeAway">{{loc.timeToTravel}}</td>
+      </tr>
+    </table>
+  </section>
 </div>
