@@ -14,7 +14,7 @@
   <div class="zipFinder container">
     <p>Click on a location below that will best suit your needs</p>
     <form>
-      <p><input type="text" placeholder="zip code" name="zip" id="zip"/></p>
+      <p><input type="text" placeholder="zip code" name="zip" id="zip" ng-change="getDistances()"/></p>
       <p>Minimum Unit size?</p>
       <p>
         <select name="unitSize" id="unitSize" ng-model="unitSize">
@@ -25,7 +25,7 @@
           <option value="20x">20x20 or bigger?</option>
         </select>
       </p>
-      <button id="zipButton" ng-click="getDistances()">go</button>
+      <!--<button id="zipButton" ng-click="getDistances()">go</button>-->
     </form>
   </div>
   <table>
