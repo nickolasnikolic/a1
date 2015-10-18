@@ -15,7 +15,7 @@
     <p>Click on a location below that will best suit your needs</p>
     <form>
       <input type="text" placeholder="zip code" name="zip" id="zip"/>
-      <selection id="unitSize" ng-model="unitSize">
+      <select name="unitSize" id="unitSize" ng-model="unitSize">
         <option value="-1">Minimum Unit size?</option>
         <option value="0">Not sure? Let us help! Dial 1-262-547-8989</option>
         <option value="5x5">5x5 or smaller</option>
@@ -26,7 +26,7 @@
         <option value="10x30">10x30</option>
         <option value="20x20">20x20</option>
         <option value="0">Bigger?</option>
-      </selection>
+      </select>
       <button id="zipButton" ng-click="getDistances()">go</button>
     </form>
   </div>
