@@ -34,7 +34,7 @@
         <th ng-show="locations[0].distanceToTravel">distance</th>
         <th ng-show="locations[0].timeToTravel">travel time</th>
       </thead>
-      <tr ng-repeat="loc in locations | orderBy: [sortDistanceToTravel, 'city'] | filter: unitSize">
+      <tr ng-repeat="loc in locations | orderBy: [sortDistanceToTravel, 'name', 'city'] | filter: unitSize">
         <td class="locationTitle">
           <span ng-show="$first && loc.timeToTravel" class="label label-success">closest!</span>
           <span ng-show="unitSize" class="label label-primary">has your amenity</span>
