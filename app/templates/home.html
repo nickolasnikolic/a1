@@ -18,7 +18,7 @@
       <p>
         Minimum Unit size?
         <select name="unitSize" id="unitSize" ng-model="unitSize">
-          <option selected="true" value="''">Not sure? Let us help! Dial 1-262-547-8989</option>
+          <option selected="true" value="0">Not sure? Let us help! Dial 1-262-547-8989</option>
           <option value="5">5' on the long side or smaller</option>
           <option value="8">8' on the long side</option>
           <option value="10">10' on the long side</option>
@@ -35,7 +35,7 @@
       <th ng-show="locations[0].distanceToTravel">distance</th>
       <th ng-show="locations[0].timeToTravel">travel time</th>
     </thead>
-    <tr ng-repeat="loc in locations | orderBy: sortDistanceToTravel | filter: unitSize">
+    <tr ng-repeat="loc in locations | orderBy: sortDistanceToTravel | filter: minimumSize(unitSize)">
       <td class="locationTitle">
         <span ng-show="$first && loc.timeToTravel" class="label label-success">closest!</span>
         <a ui-sref="location({location:loc.id })">

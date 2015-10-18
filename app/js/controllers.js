@@ -28,6 +28,10 @@ sApp.controller('HomeController', ['$scope', '$state', 'globals', function($scop
         }
     };
 
+    $scope.minimumSize = function(unitSize){
+        return _.some(element.sizes, unitSize);
+    };
+
     $scope.sortDistanceToTravel = function( location ){
 
         if( location.distanceToTravel ) {
