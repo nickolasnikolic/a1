@@ -37,7 +37,7 @@
       <tr ng-repeat="loc in locations | orderBy: sortDistanceToTravel | filter: unitSize">
         <td class="locationTitle">
           <span ng-show="$first && loc.timeToTravel" class="label label-success">closest!</span>
-          <span ng-show="unitSize" class="label label-primary">has your size</span>
+          <span ng-show="unitSize" class="label label-primary">has your amenity</span>
           <a ui-sref="location({location:loc.id })">
             <span>{{loc.name}} </span>
           </a>
