@@ -52,7 +52,7 @@ sApp.controller('LocationController', ['$scope', '$state', '$stateParams', 'glob
 
     $scope.location = _.findWhere($scope.locations, where);
 
-    $scope.allButThisOne = _.rest($scope.locations, where);
+    $scope.allButThisOne = _.reject($scope.locations, where);
 
     var l = $scope.location;
 
